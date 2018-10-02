@@ -9,6 +9,7 @@ RUN apk update \
 && apk upgrade \
 && apk add --no-cache bash git openssh \
 && npm install \
+&& npm install gulp -g \
 && chown -R node:node /app \
 && npm rebuild node-sass \
 && npm cache clean --force
